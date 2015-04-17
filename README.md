@@ -11,3 +11,8 @@ Because I have a talent for turning things into spaghetti, felt the need to auto
 
 ### How can you sleep knowing this is being used to ruin people's lives?
 Comfortably.
+
+### TODO
+- Improve design
+- Add more spaghettification methods
+- Add more info and stuff to site
