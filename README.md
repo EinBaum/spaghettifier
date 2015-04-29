@@ -1,5 +1,5 @@
 # Spaghettifier
-Breaks and uglifies code.
+Magically breaks code.
 
 ## How to use
 Simply paste code to spaghetti inside of the textbox, then click "spaghetti". There will be no visible changes, but it probably won't work anymore.
