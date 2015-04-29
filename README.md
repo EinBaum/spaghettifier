@@ -1,5 +1,6 @@
 # Spaghettifier
-Magically breaks code.
+Magically and invisibly breaks code.
+https://installgen2.github.io/spaghettifier
 
 ## How to use
 Simply paste code to spaghetti inside of the textbox, then click "spaghetti". There will be no visible changes, but it probably won't work anymore.
