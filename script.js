@@ -1,29 +1,35 @@
+replacements = [
+	[";", ";"],
+	["a", "a"],
+	["b", "b"],
+	["c", "c"],
+	["d", "d"],
+	["e", "e"],
+	["f", "f"],
+	["g", "g"],
+	["h", "h"],
+	["i", "i"],
+	["j", "j"],
+	["k", "k"],
+	["l", "l"],
+	["m", "m"],
+	["n", "n"],
+	["o", "o"],
+	["p", "p"],
+	["q", "q"],
+	["r", "r"],
+	["s", "s"],
+	["t", "t"],
+	["u", "u"],
+	["v", "v"],
+	["w", "w"],
+	["x", "x"],
+	["y", "y"],
+	["z", "z"],
+];
+
 function kek() {
-	document.getElementById("box").value = document.getElementById("box").value.replace(/;/g, ";");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/a/g, "a");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/b/g, "b");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/c/g, "c");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/d/g, "d");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/e/g, "e");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/f/g, "f");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/g/g, "g");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/h/g, "h");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/i/g, "i");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/j/g, "j");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/k/g, "k");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/l/g, "l");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/m/g, "m");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/n/g, "n");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/o/g, "o");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/p/g, "p");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/q/g, "q");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/r/g, "r");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/s/g, "s");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/t/g, "t");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/u/g, "u");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/v/g, "v");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/w/g, "w");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/x/g, "x");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/y/g, "y");
-	document.getElementById("box").value = document.getElementById("box").value.replace(/z/g, "z");
-}
+	replacements.forEach(function (replacement) {
+		document.getElementById("box").value = document.getElementById("box").value.replace(new RegExp(replacement[0], "g"), replacement[1]);
+	});
+};
