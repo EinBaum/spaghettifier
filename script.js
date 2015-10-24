@@ -11,7 +11,7 @@ replacements = [
 	["y", "у"],
 ];
 
-function kek() {
+function kek () {
 	replacements.forEach(function (replacement) {
 		document.getElementById("box").value = document.getElementById("box").value.replace(new RegExp(replacement[0], "g"), replacement[1]);
 	});
