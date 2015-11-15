@@ -1,6 +1,6 @@
 replacements = [
 	[";", ";"],
-	["|", "ǀ"],
+	["\\|", "ǀ"],
 
 	["a", "а"], ["A", "А"],
 	            ["B", "В"],
@@ -14,21 +14,24 @@ replacements = [
 	            ["K", "К"],
 	            ["M", "М"],
 	            ["N", "Ν"],
-	["o", "o"], ["O", "О"],
+	["o", "о"], ["O", "О"],
 	["p", "р"], ["P", "Р"],
-	["s", "ѕ"],
+	["s", "ѕ"], ["S", "Ѕ"],
 	            ["T", "Т"],
 	["x", "х"], ["X", "Х"],
 	["y", "у"], ["Y", "Υ"],
 	            ["Z", "Ζ"],
 
 	["ë", "ё"], ["Ë", "Ё"],
-	["ï", "ї"], ["Ï", "Ї"]
+	["ï", "ї"], ["Ï", "Ї"],
 	["ö", "ӧ"], ["Ö", "Ӧ"],
 ];
 
 function kek () {
+	var inp = document.getElementById("box_in");
+	var out = document.getElementById("box_out");
+	out.value = inp.value;
 	replacements.forEach(function (replacement) {
-		document.getElementById("box").value = document.getElementById("box").value.replace(new RegExp(replacement[0], "g"), replacement[1]);
+		out.value = out.value.replace(new RegExp(replacement[0], "g"), replacement[1]);
 	});
 };
