@@ -58,18 +58,15 @@ nav {
 	background-color: #2c2c2c;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
-nav > a {
+nav > span {
 	float: left;
 	line-height: 19px;
 	padding: 9px 10px 11px;
 	color: #999;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-nav > a:hover, #nav > a:active {
-	color: #fff;
-	text-decoration: none;
-}
-nav > a:first-child {
+
+nav > span:first-child {
 	padding: 8px 20px 12px;
 	font-size: 20px;
 	font-weight: 200;
